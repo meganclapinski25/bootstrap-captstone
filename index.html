@@ -65,41 +65,72 @@
  </section>
  <!-- Car Boxes -->
  <section class = "p-5">
-    <div class = "contianer">
-        <div class="row text-center g-4">
-            <div class="col-md d-flex">
-                <div class="card bg-light text-light">
-                    <img src="Id4.jpeg" class="card-img-top" alt="Image 1" >
-                    <div class="card-body text-center">
-                        <h3>Id4</h3>
-                        <p>  <span class="text-dark">Description of Car</span> </p>
-                        <a href="ID4.html" class="btn btn-primary">Check this Car Out</a>
-                    </div>
-                </div>
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="taycan.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Porce Taycan</h5>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </div>
-            <div class="col-md d-flex">
-                <div class="card bg-light text-light">
-                    <img src="teslax.jpeg" class="card-img-top" alt="Image 2">
-                    <div class="card-body text-center">
-                        <h3>Tesla X</h3>
-                        <p>  <span class="text-dark">Description of Car</span> </p>
-                        <a href="#" class="btn btn-primary">Check this Car Out</a>
-                    </div>
-                </div>
+          </div>
+          <div class="carousel-item">
+            <img src="teslax.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-            <div class="col-md d-flex">
-                <div class="card bg-light text-light">
-                    <img src="taycan.jpeg" class="card-img-top" alt="Image 3">
-                    <div class="card-body text-center">
-                        <h3>Taycan</h3>
-                        <p>  <span class="text-dark">Description of Car</span> </p>
-                        <a href="#" class="btn btn-primary">Check this Car Out</a>
-                    </div>
-                </div>
+          </div>
+          <div class="carousel-item">
+            <img src="Id4.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
             </div>
+          </div>
         </div>
-    </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
 </section>
+
+<!-- Button trigger modal -->
+<div class="d-flex justify-content-center align-items-center" >
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Take Our Quiz!
+    </button>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Car Quiz</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> X</button>
+        </div>
+        <div class="modal-body">
+          Need some help finding the car that best suits you. 
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-primary">Take our quiz</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 
 <!--Blog Section -->
@@ -137,9 +168,15 @@
     
 
   
+<script>
+    var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+  </script>
   
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
 </body>
   <!-- FOOTER -->
   <div class="bg-secondary p-5 text-black">
