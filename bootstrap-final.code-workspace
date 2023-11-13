@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "electric",
+			"path": "../../../Desktop/fallintensive23-main/electric"
+		},
+		{
+			"name": "bootstrap-captstone",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "bootstrap-captstone"
+	}
+}
